@@ -18,8 +18,8 @@ https://bestar87.github.io/La-Forant/
 - Pre-register by Liliyanti Bestari
 
 ## Project Teams
-2440032133 - Jonathan Felim Jhon
-2440018721 - Liliyanti Bestari
-2440016041 - Michelle William
+- 2440032133 - Jonathan Felim Jhon
+- 2440018721 - Liliyanti Bestari
+- 2440016041 - Michelle William
 
 
