@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <script src="./js/scripthome.js"></script>
+    <link rel="stylesheet" href="./css/stylemaps.css">
+</head>
+<body>
+     <!--   HEADER -- NAVIGATION BAR DROP DOWN   -->
+     <header class="navbar">
+        <div class="navbarToogle">
+            <svg viewBox="0 0 100 80" id="toogle"width="40" height="40" fill="white" onclick="toogleNavbar()">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </div>
+  
+        <div class="leftNavbar" id="toogleMenu">
+            <img src="./assets/LaForant Logo 3.png" alt="" id="logoLaforant">
+            <div> <a class ="active" href="./html/index.html">HOME</a> </div>
+  
+            <div class="dropDown">
+                <a href="#">GAME INFO</a>
+                <div class="dropDownMenu">
+                    <a href="./agents.html" class="gameInfo">AGENTS</a>
+                    <a href="./maps.html" class="gameInfo">MAPS</a>
+                </div>
+            </div>
+  
+            <div> <a href="./specs.html">SPECS REQUIREMENTS</a> </div>  
+            
+        </div>
+  
+        <div class="rightNavbar" id="toogleMenu2">
+            <a href="./preRegister.html">PRE-REGISTER</a>
+        </div>
+  
+    </header>
+
+    <div class="maps">
+        <div class="mapHaven">
+            <div>
+                <img src="./assets/map-haven.png" alt="">
+            </div>
+            <div class="mapsInfo">
+                <h1>HAVEN</h1>
+                <br>
+                <p>Beneath a forgotten monastery, a clamour <br>
+                   emerges rival Agents clashing to control<br>
+                   three sites. There's more territory to control,
+                   <br>but defenders can use the extra real estate 
+                   <br>for aggressive pushes.
+                </p>
+            </div>
+        </div>
+        <div class="mapBind">
+            <div>
+                <img src="./assets/map-bind.png" alt="">
+            </div>
+            <div class="mapsInfo">
+                <h1>BIND</h1>
+                <br>
+                <p>Two sites. No middle. Gotta pick left<br>
+                    or right. What's it going to be then? 
+                    <br> Both offer direct paths for attackers <br>
+                    and a pair of one-way teleporters make <br>
+                    it easier to flank.
+                </p>
+            </div>
+        </div>
+        <div class="mapAscent">
+            <div>
+                <img src="./assets/map-ascent.png" alt="">
+            </div>
+            <div class="mapsInfo">
+                <h1>ASCENT</h1>
+                <br>
+                <p>An open playground for small wars of
+                    <br>position and attrition divide two sites on
+                    <br>Ascent. Each site can be fortified by irreversible 
+                    <br>bomb doors; once they're down, you'll have to
+                    <br>destroy them or find another way. Yield as little 
+                    <br>territory as possible.
+                </p>
+            </div>
+        </div>
+
+        <div class="mapSplit">
+            <div>
+                <img src="./assets/map-split.png" alt="">
+            </div>
+            <div class="mapsInfo">
+                <h1>SPLIT</h1>
+                <br>
+                <p>If you want to go far, you'll
+                    <br>have to go up. A pair of 
+                    <br>sites split by an elevated center allows
+                    <br>for rapid movement using two rope ascenders.
+                    <br>Each site is built with a looming
+                    <br>tower vital for control. Remember to watch
+                    <br>above before it all blows sky-high.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="lineOne">
+        Follow Us On
+    </div>
+    <nav class="sosmed">
+        <a href="https://twitter.com/"><img src="./assets/twitter.png" width="50" height="50"></a>
+        <a href="https://www.instagram.com"><img src="./assets/instagram.png" width="50" height="50"></a>
+        <a href="https://www.youtube.com"><img src="./assets/youtube.png" width="50" height="50"></a>
+        <a href="https://www.facebook.com/"><img src="./assets/facebook light.png" width="50" height="50"></a>
+    </nav>
+    <div class="lineTwo">
+        © 2021 LAFORANT, INC, LAFORANT GAMES, LAFORANT, AND ANY<br>ASSOCIATED LOGOS ARE TRADEMARKS OF LAFORANT, INC
+    </div>
+</div>
+</body>
+</html>
