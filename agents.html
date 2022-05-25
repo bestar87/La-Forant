@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents</title>
+    <link rel="stylesheet" href="./../css/styleAgents.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b24edf0788.js" crossorigin="anonymous"></script>
+    <script src="./../js/scriptAgents.js"></script>
+</head>
+<body>
+    <!--   HEADER -- NAVIGATION BAR DROP DOWN   -->
+    <header class="navbar">
+      <div class="navbarToogle">
+          <svg viewBox="0 0 100 80" id="toogle"width="40" height="40" fill="white" onclick="toogleNavbar()">
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </div>
+
+      <div class="leftNavbar" id="toogleMenu">
+          <img src="./../assets/LaForant Logo 3.png" alt="" id="logoLaforant">
+          <div> <a class ="active" href="index.html">HOME</a> </div>
+
+          <div class="dropDown">
+              <a href="#">GAME INFO</a>
+              <div class="dropDownMenu">
+                  <a href="./agents.html" class="gameInfo">AGENTS</a>
+                  <a href="./maps.html" class="gameInfo">MAPS</a>
+              </div>
+          </div>
+
+          <div> <a href="./specs.html">SPECS REQUIREMENTS</a> </div>  
+          
+      </div>
+
+      <div class="rightNavbar" id="toogleMenu2">
+          <a href="./preRegister.html">PRE-REGISTER</a>
+      </div>
+
+  </header>
+
+    <div class="slider-cont">
+        <i class="fas fa-chevron-left" id="slide-left"></i>
+        <img class="slide" src ="./../assets/Brimstone.png">
+        <img class="slide" src="./../assets/Phoenix.png">
+        <img class="slide" src="./../assets/Sage.png">
+        <img class="slide" src="./../assets/Sova.png">
+        <img class="slide" src="./../assets/Viper.png">
+        <img class="slide" src="./../assets/Cypher.png">
+        <img class="slide" src="./../assets/Reyna.png">
+        <img class="slide" src="./../assets/Breach.png">
+        <img class="slide" src="./../assets/Omen.png">
+        <img class="slide" src="./../assets/Jett.png">
+        <img class="slide" src="./../assets/Raze.png">
+        <i class="fas fa-chevron-right" id="slide-right"></i>
+      </div>
+     
+<div class="footer">
+  <div class="lineOne">
+      Follow Us On
+  </div>
+  <nav class="sosmed">
+      <a href="https://twitter.com/"><img src="./../assets/twitter.png" width="50" height="50"></a>
+      <a href="https://www.instagram.com"><img src="./../assets/instagram.png" width="50" height="50"></a>
+      <a href="https://www.youtube.com"><img src="./../assets/youtube.png" width="50" height="50"></a>
+      <a href="https://www.facebook.com/"><img src="./../assets/facebook light.png" width="50" height="50"></a>
+  </nav>
+  <div class="lineTwo">
+      © 2021 LAFORANT, INC, LAFORANT GAMES, LAFORANT, AND ANY<br>ASSOCIATED LOGOS ARE TRADEMARKS OF LAFORANT, INC
+  </div>
+</div>
+
+</body>
+</html>
