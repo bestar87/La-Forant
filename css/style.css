@@ -1,0 +1,372 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#101820;
+}
+
+#logoLaforant{
+    height :70px;
+    width:100px;
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.leftNavbar a:hover{
+    color:#101820;
+    background-color: white;
+}
+
+.rightNavbar{
+    background-color:  #e8a34a;
+    padding:15px;
+}
+
+.dropDownMenu .gameInfo{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+.dropDown{
+    position: relative;
+}
+
+.dropDown .dropDownMenu{
+    display: none;
+    position: absolute;
+    padding: 15px;
+
+}
+
+.dropDown:hover .dropDownMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-family:  'Copperplate Gothic Bold', 'Copperplate Gothic Light', Copperplate, fantasy;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.navbarToogle{
+    padding:20px;
+    display: none;
+}
+
+
+/* Content CSS */
+
+.container1 {
+    padding: 0px;
+    background-color: #101820;
+    color: white;
+    width: auto;
+    display: flex;
+    animation: fadeIn 3s;
+  }
+
+  .container2 {
+    padding: 0;
+    background-color: #ece8e1;
+    color: black;
+    width: auto;
+    display: flex;
+    animation: fadeIn 3s;
+  }
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: black;
+    animation: fadeIn 3s;
+}
+
+#img-change:hover {
+    content: url('./../assets/laforant\ illust\ 2.png');
+}
+
+
+.content1 {
+    margin-left: 20px;
+    padding: 20px 10px;
+    width: 60%;
+}
+
+.content2 {
+    margin-left: 20px;
+    padding: 20px 10px;
+    width: 60%;
+}
+
+.img-container {
+    width: 60%;
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e8a34a;
+    font-family: Copperplate Gothic Bold;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.button2 {
+    border: none;
+    color: black;
+    padding: 8px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e8a34a;
+    font-family: Copperplate Gothic Bold;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.img2 {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.img3 {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./../assets/Aquire-BW0ox.otf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(./../assets/Azonix-1VB0.otf);
+}
+.large-font {
+    font-size: 48pt;
+    font-family: myFirstFont;
+    font-weight: bold;
+}
+
+.font {
+    font-size: 48pt;
+    font-family: myFirstFont;
+    font-weight: bold;
+}
+
+.font::before{
+    content: "\a";
+}
+
+.textagent{
+    font-size: 20pt;
+    font-family: Californian FB;
+}
+
+.textmap{
+    font-size: 18pt;
+    margin: 16px 0;
+    font-family: Californian FB;
+}
+
+.enter{
+    font-size: 20pt;
+    font-family: Californian FB;
+}
+
+.enter::before{
+    content: "\a";
+    white-space: pre;
+}
+
+/* Footer CSS */
+.footer {
+    background-color: #101820;
+    color: #d4d4d4;
+    font-family: 'Louis George Café Light', sans-serif;
+    text-align: center;
+}
+
+.lineOne {
+    padding-top: 25px;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.lineTwo {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+
+@media only screen and (max-width : 800px){
+    .leftNavbar, .rightNavbar{
+        display: block;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
+    }
+ 
+    #logoLaforant{
+       display: none;
+    }
+ 
+    .navbarToogle{
+        padding: 20px;
+        display: flex;
+    }
+
+    .navbarToogle:hover{
+        background-color: black;
+    }
+
+    .rightNavbar{
+        background-color: #101820;
+        padding:0px;
+    }
+
+    .navbar a{
+        display: block;
+    }
+    
+    .rightNavbar a:hover{
+        color: #101820;
+        background-color: white;
+    }
+
+    .dropDown .dropDownMenu{
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .navbar .leftNavbar,
+        .navbar .rightNavbar{
+            display: none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    #img-change {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    #container{
+        flex-direction: column-reverse;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        position: relative;
+    }
+
+    .container1{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .img2{
+        margin-left: 175px;
+        margin-right: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img3{
+        width: 97vw;
+    }
+
+    .large-font{
+        font-size: 48pt;
+    }
+
+    .font{
+        font-size: 48pt;
+    }
+
+    .textagent{
+        font-size: 14pt;
+    }
+
+    .textmap{
+        font-size: 16pt;
+    }
+
+    .font::before{
+        display: none;
+    }
+
+    .enter::before{
+        display: none;
+    }
+
+    .enter{
+        font-size: 14pt;
+    }
+
+    .lineOne {
+        padding-top: 25px;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    
+    .sosmed {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .lineTwo {
+        font-size: 14px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#101820;
+}
+
+#logoLaforant{
+    height :70px;
+    width:100px;
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.leftNavbar a:hover{
+    color:#101820;
+    background-color: white;
+}
+.rightNavbar{
+    background-color:  #e8a34a;
+    padding:15px;
+}
+
+.dropDownMenu .gameInfo{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+.dropDown{
+    position: relative;
+}
+
+.dropDown .dropDownMenu{
+    display: none;
+    position: absolute;
+    padding: 15px;
+
+}
+
+.dropDown:hover .dropDownMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-family:  'Copperplate Gothic Bold', 'Copperplate Gothic Light', Copperplate, fantasy;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.navbarToogle{
+    padding:20px;
+    display: none;
+}
+
+/* Content CSS */
+.maps{
+    background-color:  #8b978f;
+    font-family: Book antiqua;
+}  
+.mapHaven,
+.mapAscent{
+    animation: fadeIn 5s;
+    display: flex;
+    flex-direction: row;
+}
+
+.maps img{
+    height: 426.8px;
+}
+
+.mapsInfo{
+    animation: fadeIn 5s;
+    background-color:  #8b978f;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18pt;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.mapBind,
+.mapSplit{
+    animation: fadeIn 5s;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+h1{
+    letter-spacing: 5px;
+}
+/* Footer CSS */
+.footer {
+    background-color: #101820;
+    color: #d4d4d4;
+    font-family: 'Louis George Café Light', sans-serif;
+    text-align: center;
+}
+
+.lineOne {
+    padding-top: 25px;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.lineTwo {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+
+@media only screen and (max-width : 800px){
+    .leftNavbar, .rightNavbar{
+        display: block;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
+    }
+ 
+    #logoLaforant{
+       display: none;
+    }
+ 
+    .navbarToogle{
+        padding: 20px;
+        display: flex;
+    }
+
+    .navbarToogle:hover{
+        background-color: black;
+    }
+
+    .rightNavbar{
+        background-color: #101820;
+        padding:0px;
+    }
+
+    .navbar a{
+        display: block;
+    }
+    
+    .rightNavbar a:hover{
+        color: #101820;
+        background-color: white;
+    }
+
+    .dropDown .dropDownMenu{
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .navbar .leftNavbar,
+    .navbar .rightNavbar{
+        display: none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    
+    .mapHaven,
+    .mapBind,
+    .mapAscent,
+    .mapSplit{
+        flex-direction: column-reverse;
+    }
+    .mapsInfo{
+        font-size: 12pt;
+    }
+
+    i{
+        margin: 0px;
+        padding: 3px;
+        font-size: 30px;
+    }
+
+    .slider-cont img{
+     max-width: 500px;
+     height: fit-content;
+     min-width: 200px;
+     width: fit-content;
+    }
+    
+    .slider-cont{
+        font-size: 32px;
+        height: 450px;
+    }
+
+    .lineOne {
+        padding-top: 25px;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    
+    .sosmed {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .lineTwo {
+        font-size: 14px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 700px){
+    .maps img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

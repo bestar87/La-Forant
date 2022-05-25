@@ -1,0 +1,264 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#101820;
+}
+
+#logoLaforant{
+    height :70px;
+    width:100px;
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.leftNavbar a:hover{
+    color:#101820;
+    background-color: white;
+}
+.rightNavbar{
+    background-color:  #e8a34a;
+    padding:15px;
+}
+
+.dropDownMenu .gameInfo{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+.dropDown{
+    position: relative;
+}
+
+.dropDown .dropDownMenu{
+    display: none;
+    position: absolute;
+    padding: 15px;
+
+}
+
+.dropDown:hover .dropDownMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-family:  'Copperplate Gothic Bold', 'Copperplate Gothic Light', Copperplate, fantasy;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.navbarToogle{
+    padding:20px;
+    display: none;
+}
+
+/* Content CSS */
+.text{
+    background-color: #0f1923;
+    color: #ece8e1;
+}
+
+
+
+.spec{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    animation: fadeIn 3s;
+}
+
+.table{
+    background-color: #ece8e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-direction: column;
+    animation: fadeIn 4s;
+}
+
+th{
+    text-align: center;
+    padding: 20px;
+}
+.satuin{
+    border-collapse: collapse;
+    background-color: #ece8e1;
+    
+}
+
+#pc{
+    background-color: #ff4655;
+    border: 1px solid #ece8e1;
+}
+
+#win{
+    background-color: #0f1923;
+    color: #ece8e1;
+    border: 1px solid #ece8e1;
+}
+
+.border{
+    border: 1px solid black;
+    background-color: #8b978f;
+    color: #ece8e1;
+    text-decoration: none;
+    font-family: Copperplate Gothic Bold;
+}
+
+.border2{
+    border: 1px solid black;
+    font-family: Copperplate Gothic Bold;
+}
+
+#spec{
+    font-size: 16pt;
+}
+
+#specl{
+    font-size: 24pt;
+}
+
+#core{
+    color: #8b978f;
+}
+
+h1{
+    color: #0f1923;
+    opacity: 80%;
+}
+
+/* Footer CSS */
+.footer {
+    background-color: #101820;
+    color: #d4d4d4;
+    font-family: 'Louis George Café Light', sans-serif;
+    text-align: center;
+}
+
+.lineOne {
+    padding-top: 25px;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.lineTwo {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width : 800px){
+    .leftNavbar, .rightNavbar{
+        display: block;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
+    }
+ 
+    #logoLaforant{
+       display: none;
+    }
+ 
+    .navbarToogle{
+        padding: 20px;
+        display: flex;
+    }
+
+    .navbarToogle:hover{
+        background-color: black;
+    }
+
+    .rightNavbar{
+        background-color: #101820;
+        padding:0px;
+    }
+
+    .navbar a{
+        display: block;
+    }
+    
+    .rightNavbar a:hover{
+        color: #101820;
+        background-color: white;
+    }
+
+    .dropDown .dropDownMenu{
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .navbar .leftNavbar,
+    .navbar .rightNavbar{
+        display: none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #spec{
+        font-size: 12pt;
+    }
+    
+    #specl{
+        font-size: 18pt;
+    }
+
+    th{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lineOne {
+        padding-top: 25px;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    
+    .sosmed {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .lineTwo {
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 14pt;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+/* HEADER CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#101820;
+}
+
+#logoLaforant{
+    height :70px;
+    width:100px;
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.leftNavbar a:hover{
+    color:#101820;
+    background-color: white;
+}
+.rightNavbar{
+    background-color:  #e8a34a;
+    padding:15px;
+}
+
+.dropDownMenu .gameInfo{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+.dropDown{
+    position: relative;
+}
+
+.dropDown .dropDownMenu{
+    display: none;
+    position: absolute;
+    padding: 15px;
+
+}
+
+.dropDown:hover .dropDownMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820;
+}
+
+.navbar a{
+    font-size: 16px;
+    font-family:  'Copperplate Gothic Bold', 'Copperplate Gothic Light', Copperplate, fantasy;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.navbarToogle{
+    padding:20px;
+    display: none;
+}
+
+/* FORM CSS */
+@font-face {
+    font-family: myFont;
+    src: url("./../assets/Louis\ George\ Cafe\ Bold.ttf");
+}
+
+.wrapper .backgroundImage{
+    background-image: url("./../assets/Laforant\ Pre-Register\ BG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    width: 100%;
+    animation: fadeIn 3s;
+}
+
+input[type=text],input[type=password]
+,input[type=date],select{
+    width: 40%;
+    padding: 5px;
+    font-family: myFont;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: myFont;
+}
+
+.form{
+        
+    background-color: 	rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    border: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 3;
+    width: 40%;
+    text-align: center;
+    animation: fadeIn 3s;
+}
+h1:active,
+.registerElement:active,.agreement:active{
+    color: #e8a34a;
+}
+
+button{
+    padding: 15px;
+    color: white;
+    background-color: #e8a34a;
+    font-family: myFont;
+}
+
+.agreement{
+    font-size: 12pt;
+    padding: 5px;
+}
+
+.registerElement{
+    font-size: 14pt;
+    padding: 6px;
+}
+
+
+
+
+/* FOOTER CSS */
+.footer {
+    background-color: #101820;
+    color: #d4d4d4;
+    font-family: 'Louis George Café Light', sans-serif;
+    text-align: center;
+}
+
+.lineOne {
+    padding-top: 25px;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.lineTwo {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+   
+    .leftNavbar, .rightNavbar{
+        display: block;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
+    }
+ 
+    #logoLaforant{
+       display: none;
+    }
+ 
+    .navbarToogle{
+        padding: 20px;
+        display: flex;
+    }
+
+    .navbarToogle:hover{
+        background-color: black;
+    }
+
+    .rightNavbar{
+        background-color: #101820;
+        padding:0px;
+    }
+
+    .navbar a{
+        display: block;
+    }
+    
+    .rightNavbar a:hover{
+        color: #101820;
+        background-color: white;
+    }
+
+    .dropDown .dropDownMenu{
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .navbar .leftNavbar,
+    .navbar .rightNavbar{
+        display: none;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        position: relative;
+    }
+    .form{
+        width: 70%;
+    }
+
+    input[type=text],input[type=password]
+    ,input[type=date],select{
+        width: 70%;
+        padding: 6px;
+    }
+
+    .registerElement{
+        font-size: 11pt;
+    }
+    .wrapper .backgroundImage{
+        background-image: none;
+        background-color: #101820;
+    }
+    
+    .lineOne {
+        padding-top: 25px;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    
+    .sosmed {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .lineTwo {
+        font-size: 14px;
+    }
+
+ }
+
+ @keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
